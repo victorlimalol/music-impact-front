@@ -1,0 +1,17 @@
+.event-items {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.event-item {
+    width: 220px;
+    height: 140px;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+    background-color: #fff;
+    -webkit-box-shadow: 1px 4px 10px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 4px 10px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 4px 10px -3px rgba(0, 0, 0, 0.75);
+}

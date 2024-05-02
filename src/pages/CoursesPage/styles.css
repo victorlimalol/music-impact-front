@@ -1,0 +1,62 @@
+.banner-courses-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    background-image: url('../../images/Foto\ principal.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+}
+
+.banner-content>h1 {
+    padding: 40px;
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    font-weight: 400;
+}
+
+.courses-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.courses-section>div {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    width: 100%;
+    justify-content: center;
+}
+
+.courses-grid {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: space-between;
+}
+
+.course>img {
+    width: 300px;
+    height: 300px;
+}
+
+footer {
+    width: 100%;
+    height: 40px;
+    background-color: #4E4E4E;
+}

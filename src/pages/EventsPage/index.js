@@ -1,5 +1,6 @@
 import './styles.css';
 import Header from '../../Components/Header';
+import EventsItem from '../../Components/EventItem';
 
 function EventsPage() {
   return (
@@ -16,32 +17,16 @@ function EventsPage() {
           <div class="events-category">
             <h2>Eventos proximos</h2>
             <div class="event-items">
-              <div class="event-item">
-                <h3 class="event-title">Shopping Tatuapé</h3>
-                <p>AV. Rui Barbosa, 1245, Radial leste.
-                  18:00h ás 20hrs</p>
-              </div>
+              <EventsItem title="Shopping Tatuapé" address="AV. Rui Barbosa, 1245, Radial leste. 18:00h ás 20hrs" />
             </div>
           </div>
 
           <div class="events-category">
             <h2>Eventos passados</h2>
             <div class="event-items">
-              <div class="event-item">
-                <h3 class="event-title">Shopping Tatuapé</h3>
-                <p>AV. Rui Barbosa, 1245, Radial leste.
-                  18:00h ás 20hrs</p>
-              </div>
-              <div class="event-item">
-                <h3 class="event-title">Shopping Tatuapé</h3>
-                <p>AV. Rui Barbosa, 1245, Radial leste.
-                  18:00h ás 20hrs</p>
-              </div>
-              <div class="event-item">
-                <h3 class="event-title">Shopping Tatuapé</h3>
-                <p>AV. Rui Barbosa, 1245, Radial leste.
-                  18:00h ás 20hrs</p>
-              </div>
+              <EventsItem title="Shopping Tatuapé" address="AV. Rui Barbosa, 1245, Radial leste. 18:00h ás 20hrs" />
+              <EventsItem title="Shopping Tatuapé" address="AV. Rui Barbosa, 1245, Radial leste. 18:00h ás 20hrs" />
+              <EventsItem title="Shopping Tatuapé" address="AV. Rui Barbosa, 1245, Radial leste. 18:00h ás 20hrs" />
             </div>
           </div>
         </section>
