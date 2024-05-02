@@ -1,20 +1,10 @@
 import './styles.css';
+import Header from '../../Components/Header';
 
 function EventsPage() {
   return (
     <div>
-      <header class="header-container">
-        <div class="header-content">
-          <h1 class="logo">music.impact</h1>
-          <nav class="menu-items">
-            <a class="menu-item">Eventos</a>
-            <a class="menu-item">Aulas</a>
-            <a class="menu-item">Planos</a>
-            <a class="menu-item">Area de Admin</a>
-          </nav>
-        </div>
-      </header>
-
+      <Header />
       <main>
         <section class="banner-container">
           <div class="banner-content">

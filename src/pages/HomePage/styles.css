@@ -1,0 +1,153 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    overflow-x: auto;
+}
+
+header>div>img {
+    width: 200px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 650px;
+    background-color: #124559;
+}
+
+.welcome-section-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 80px;
+}
+
+.welcome-section-content>h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 550;
+}
+
+.welcome-section-content>h1>span {
+    color: #EFF6E0
+}
+
+.welcome-section-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 600px;
+}
+
+.welcome-section-inputs>button {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    width: 47%;
+    height: 70px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #fff;
+    border: none;
+    color: #000
+}
+
+.button-soft {
+    background-color: #EFF6E0 !important;
+}
+
+.button-light {
+    color: #124559 !important
+}
+
+.image-notebook {
+    position: absolute;
+    width: 600px;
+    margin-top: 430px;
+}
+
+.our-history-section {
+    margin-top: 250px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 450px;
+    background-color: #fff;
+}
+
+.our-history-section-content {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.our-history-section-content>div>h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+}
+
+.our-history-section-content>div>p {
+    width: 400px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.testemunials-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #AEC3B0;
+}
+
+.testemunials-section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    width: 100%;
+    max-width: 1000px;
+    height: 400px;
+}
+
+.testemunials-section-content>h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+}
+
+.testemunials-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 200px;
+}
+
+footer {
+    width: 100%;
+    height: 40px;
+    background-color: #4E4E4E;
+}
