@@ -1,17 +1,22 @@
-import './styles.css';
+import './styles.scss';
 import logo from '../../images/logo-site.svg'
+import { Link } from 'react-router-dom';
 
-function Header() {
+function Header(props) {
     return (
-        <header class="header-container">
-            <div class="header-content">
-                <img src={logo} alt="Logo Music-Impact" />
-                <nav class="menu-items">
-                    <a class="menu-item">Eventos</a>
-                    <a class="menu-item">Aulas</a>
-                    <a class="menu-item">Planos</a>
-                    <a class="menu-item">Area de Admin</a>
-                </nav>
+        <header className='header-default'>
+            <div>
+                <Link to='/'>
+                    <img class="logo-image" src={logo} alt="Logo Music-Impact" />
+                </Link>
+                {!props.noRoutes && (
+                    <nav class="menu-items">
+                        <Link to='/events' class="menu-item">Eventos</Link>
+                        <Link to='/courses' class="menu-item">Aulas</Link>
+                        <Link to='/plans' class="menu-item">Planos</Link>
+                        <Link to='/login' class="menu-item">Area de Admin</Link>
+                    </nav>
+                )}
             </div>
         </header>
     );

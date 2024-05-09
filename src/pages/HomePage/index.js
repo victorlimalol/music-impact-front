@@ -1,8 +1,10 @@
-import './styles.css';
+import './styles.scss';
 import notebook from '../../images/notebook.svg'
 import inCourse from '../../images/teacher-and-student-in-course.png'
-import Header from '../../Components/Header';
+import logo from '../../images/logo-site.svg'
 import TestemonialsCard from '../../Components/TestemonialsCards'
+import { Link } from 'react-router-dom';
+import Header from '../../Components/Header';
 
 function HomePage() {
     return (

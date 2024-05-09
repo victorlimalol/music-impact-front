@@ -1,6 +1,5 @@
-import './styles.css';
+import './styles.scss';
 import Header from '../../Components/Header';
-import './styles.css';
 import guitar from '../../images/foto do violão.jpg';
 import eletricGuitar from '../../images/eletric-guitar.png'
 import voice from '../../images/voice.png'

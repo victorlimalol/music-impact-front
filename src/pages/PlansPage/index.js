@@ -1,4 +1,4 @@
-import './styles.css';
+import './styles.scss';
 import Header from '../../Components/Header';
 import PlanItem from '../../Components/PlanItem';
 

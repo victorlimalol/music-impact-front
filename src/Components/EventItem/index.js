@@ -1,4 +1,4 @@
-import './styles.css';
+import './styles.scss';
 
 function EventsItem(props) {
     return (

@@ -1,4 +1,4 @@
-import './styles.css';
+import './styles.scss';
 import Header from '../../Components/Header';
 import EventsItem from '../../Components/EventItem';
 

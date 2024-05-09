@@ -1,0 +1,18 @@
+.list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 65px;
+    border: 1px solid #B0B0B0;
+    background-color: #F3F3F3;
+    border-radius: 5px;
+}
+
+.list-item>p {
+    font-size: 15px;
+    font-weight: bold;
+}
