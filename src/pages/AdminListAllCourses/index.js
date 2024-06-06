@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from '../../Components/Header';
 import HeaderAdmin from '../../Components/HeaderAdmin';
 import { PiStudentThin, PiBookBookmarkThin, PiChalkboardTeacherThin } from "react-icons/pi";
@@ -10,6 +10,15 @@ import HeaderAdminContent from '../../Components/HeaderAdminContent';
 import ItemList from '../../Components/ItemList';
 
 function AdminListAllCourse() {
+    const [courses, setCourses] = useState([]);
+
+    useEffect(() => {
+        fetch('http://localhost:5000/course/list')
+            .then(response => response.json())
+            .then(data => setCourses(data))
+            .catch(error => console.error('Error fetching courses:', error));
+    }, []);
+
     return (
         <AdminTemplate>
             <div className="main-content">
@@ -17,14 +26,19 @@ function AdminListAllCourse() {
                     <HeaderAdminContent
                         title="Cursos"
                         buttonText="Adicionar Curso"
+                        buttonGoTo="/admin/add/course"
+                        buttonType="navigate"
                     />
 
                     <div className='list-all-items'>
-                        <ItemList name="Curso de Violão" />
-                        <ItemList name="Curso de Bateria" />
-                        <ItemList name="Curso de Contra-baixo" />
-                        <ItemList name="Curso de Guitarra" />
-                        <ItemList name="Curso de Voz" />
+                        {courses.map(course => (
+                            <ItemList
+                                key={course.id}
+                                name={course.name}
+                                goTo={`/admin/edit/course/${course.id}`}
+                                itemId={course.id}
+                            />
+                        ))}
                     </div>
                 </div>
             </div>

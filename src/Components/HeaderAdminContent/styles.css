@@ -6,7 +6,11 @@
     width: 100%;
 }
 
-.main-content-header>button {
+.main-content-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     width: 200px;
     height: 35px;
     background-color: black;

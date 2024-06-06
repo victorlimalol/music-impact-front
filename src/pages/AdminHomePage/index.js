@@ -1,7 +1,4 @@
 import React from 'react';
-import Header from '../../Components/Header';
-import HeaderAdmin from '../../Components/HeaderAdmin';
-import { PiStudentThin, PiBookBookmarkThin, PiChalkboardTeacherThin } from "react-icons/pi";
 import './styles.css';
 import AdminTemplate from '../../Template/AdminTemplate';
 

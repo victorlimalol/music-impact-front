@@ -1,0 +1,23 @@
+.header-admin-item-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+    width: 100%;
+}
+
+.header-admin-item-content>.info>p {
+    margin: 0px;
+    color: #C9C9C9
+}
+
+.header-admin-item-content>.info>h2 {
+    margin: 0px;
+}
+
+.header-admin-item-content>.action {
+    display: flex;
+    flex-direction: row;
+    gap: 10px
+}

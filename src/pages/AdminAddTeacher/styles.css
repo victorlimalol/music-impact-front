@@ -1,0 +1,58 @@
+.form-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-item>label {
+    font-size: 13px;
+    font-family: 'Poppins';
+    font-weight: 300;
+}
+
+.input-item>input {
+    height: 30px;
+    font-size: 13px;
+    font-family: 'Poppins';
+    border-radius: 7px;
+    border: 1px solid #000;
+}
+
+.big-label-area {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.big-label-area>p {
+    width: 50%;
+    font-family: 'Poppins';
+    font-size: 13;
+    font-weight: 500;
+}
+
+.courses-area {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 180px 180px 180px;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.course-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
