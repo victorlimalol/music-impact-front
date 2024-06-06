@@ -29,7 +29,7 @@ function AdminAddCourse() {
             description
         };
 
-        axios.post('http://localhost:5000/course/create', data)
+        axios.post('http://172.215.144.188:5000/course/create', data)
             .then(response => {
                 console.log('Resposta:', response.data);
             })

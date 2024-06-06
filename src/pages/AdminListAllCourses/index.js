@@ -13,7 +13,7 @@ function AdminListAllCourse() {
     const [courses, setCourses] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/course/list')
+        fetch('http://172.215.144.188:5000/course/list')
             .then(response => response.json())
             .then(data => setCourses(data))
             .catch(error => console.error('Error fetching courses:', error));

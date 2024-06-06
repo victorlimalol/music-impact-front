@@ -20,7 +20,7 @@ function AdminAddStudent() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch('http://localhost:5000/course/list')
+        fetch('http://172.215.144.188:5000/course/list')
             .then(response => response.json())
             .then(data => {
                 setCourses(data)
@@ -74,7 +74,7 @@ function AdminAddStudent() {
             courses: coursesIdSelected
         };
 
-        axios.post('http://localhost:5000/students/register', data)
+        axios.post('http://172.215.144.188:5000/students/register', data)
             .then(response => {
                 console.log('Resposta:', response.data);
                 navigate('/admin/students', { replace: true });
