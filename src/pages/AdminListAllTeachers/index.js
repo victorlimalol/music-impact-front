@@ -16,14 +16,14 @@ function AdminListAllTeachers() {
     const [searchTerm, setSearchTerm] = useState('')
 
     useEffect(() => {
-        fetch('http://localhost:5000/teacher/list')
+        fetch('http://172.215.144.188:5000/teacher/list')
             .then(response => response.json())
             .then(data => setTeachers(data))
             .catch(error => console.error('Error fetching teachers:', error));
     }, []);
 
     useEffect(() => {
-        fetch('http://localhost:5000/course/list')
+        fetch('http://172.215.144.188:5000/course/list')
             .then(response => response.json())
             .then(data => setCourses(data))
             .catch(error => console.error('Error fetching students:', error));
@@ -35,7 +35,7 @@ function AdminListAllTeachers() {
     };
 
     const handleFilter = async () => {
-        let url = 'http://localhost:5000/teacher/list'
+        let url = 'http://172.215.144.188:5000/teacher/list'
 
         const params = [];
         if (selectedOption && selectedOption !== "Todos os cursos") {

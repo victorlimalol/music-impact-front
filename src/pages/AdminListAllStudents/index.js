@@ -18,14 +18,14 @@ function AdminListAllStudents() {
     const [openModal, setOpenModal] = useState(false)
 
     useEffect(() => {
-        fetch('http://localhost:5000/students')
+        fetch('http://172.215.144.188:5000/students')
             .then(response => response.json())
             .then(data => setStudents(data))
             .catch(error => console.error('Error fetching students:', error));
     }, []);
 
     useEffect(() => {
-        fetch('http://localhost:5000/course/list')
+        fetch('http://172.215.144.188:5000/course/list')
             .then(response => response.json())
             .then(data => setCourses(data))
             .catch(error => console.error('Error fetching students:', error));
@@ -37,7 +37,7 @@ function AdminListAllStudents() {
     };
 
     const handleFilter = async () => {
-        let url = 'http://localhost:5000/students'
+        let url = 'http://172.215.144.188:5000/students'
 
         const params = [];
         if (selectedOption && selectedOption !== "Todos os cursos") {

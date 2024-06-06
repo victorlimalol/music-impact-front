@@ -23,7 +23,7 @@ function AdminEditCourse() {
 
     const fetchCourseData = async () => {
         try {
-            const response = await axios.get(`http://localhost:5000/course/${id}`);
+            const response = await axios.get(`http://172.215.144.188:5000/course/${id}`);
             setCourseName(response.data.name || '');
             setModality(response.data.modality || '');
             setDescription(response.data.description || '');
@@ -35,7 +35,7 @@ function AdminEditCourse() {
 
     const handleDelete = async () => {
         try {
-            await axios.delete(`http://localhost:5000/course/${id}`)
+            await axios.delete(`http://172.215.144.188:5000/course/${id}`)
             navigate('/admin/courses', { replace: true });
         } catch (error) {
             console.error(error);
@@ -62,7 +62,7 @@ function AdminEditCourse() {
         };
 
         try {
-            await axios.put(`http://localhost:5000/course/${id}`, data);
+            await axios.put(`http://172.215.144.188:5000/course/${id}`, data);
             navigate('/admin/courses', { replace: true });
         } catch (error) {
             console.error(error);

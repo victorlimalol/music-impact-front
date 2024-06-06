@@ -21,7 +21,7 @@ function AdminGetStudent(props) {
 
     const fetchStudentData = async () => {
         try {
-            const response = await axios.get(`http://localhost:5000/students/${id}`);
+            const response = await axios.get(`http://172.215.144.188:5000/students/${id}`);
             setUser(response.data);
             console.log(response)
         } catch (error) {

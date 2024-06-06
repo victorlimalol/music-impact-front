@@ -26,7 +26,7 @@ function AdminAddStudent() {
     }, []);
 
     const fetchCourses = async (userCourses) => {
-        fetch('http://localhost:5000/course/list')
+        fetch('http://172.215.144.188:5000/course/list')
             .then(response => response.json())
             .then(data => {
                 const updatedCourses = data.map(course => ({
@@ -41,7 +41,7 @@ function AdminAddStudent() {
 
     const fetchStudentData = async () => {
         try {
-            const response = await axios.get(`http://localhost:5000/teacher/${id}`);
+            const response = await axios.get(`http://172.215.144.188:5000/teacher/${id}`);
             setNome(response.data.name || '');
             setCpf(response.data.cpf || '');
             setTelefone(response.data.phone_number || '');
@@ -84,7 +84,7 @@ function AdminAddStudent() {
 
     const handleDelete = async () => {
         try {
-            await axios.delete(`http://localhost:5000/teacher/${id}`)
+            await axios.delete(`http://172.215.144.188:5000/teacher/${id}`)
             navigate('/admin/teachers', { replace: true });
         } catch (error) {
             console.error(error);
@@ -110,7 +110,7 @@ function AdminAddStudent() {
         };
 
         try {
-            await axios.put(`http://localhost:5000/teacher/${id}`, data);
+            await axios.put(`http://172.215.144.188:5000/teacher/${id}`, data);
             navigate('/admin/teachers', { replace: true });
         } catch (error) {
             console.error(error);
